@@ -25,3 +25,4 @@ A Python script that takes the Superstore dataset and turns it into a proper P&L
 
 ## Notes
 - Sankey uses fixed positions on the visual. If labels start to overlap, please use 'arrangement=snap'
+- 'sankey_chart.html' needs to be hosted to show the interactive chart. You can host it locally.

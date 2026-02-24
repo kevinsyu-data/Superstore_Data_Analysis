@@ -71,13 +71,13 @@ cat_sums = sankey_df.groupby('Category').agg(
 ).reset_index()
 
 for _, row in cat_sums.iterrows():
-    # Category → Profit
+    # Category to Profit
     sources.append(idx(row['Category']))
     targets.append(idx('Profit'))
     values.append(row['Profit'])
     colors.append('rgba(60, 179, 113, 0.4)')
 
-    # Category → Discount Amount
+    # Category to Loss
     sources.append(idx(row['Category']))
     targets.append(idx('COGS'))
     values.append(row['COGS'])
